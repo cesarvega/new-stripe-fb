@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h1>Create Projects</h1>
+			<p>Create Projects and pay 1$/day for each project through stripe</p> 
+		</div>
+		
+		<div class='container'>
+			<div class='container-fluid'>
+				<h2>Create Account</h2>
+			</div>
+			<br>
+			<form action = "https://us-central1-bsgur-fdb7a.cloudfunctions.net/app/create-user" method = "post">
+				<div class="form-group">
+					<label for="usr">Name:</label>
+					<input type="text" class="form-control" name="name">
+				</div>
+				<div class="form-group">
+					<label for="usr">Email:</label>
+					<input type="email" class="form-control" name="email">
+				</div>
+				<div class="form-group">
+					<label for="usr">Password:</label>
+					<input type="password" class="form-control" name="pass">
+				</div>
+				<input type='submit' type="button" class="btn btn-primary btn-block" value='Sign Up'>
+			</form>
+		</div>
+		
+	</body>
+</html>
